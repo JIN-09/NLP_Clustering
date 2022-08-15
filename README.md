@@ -6,4 +6,4 @@ SIGNATE Student Cup 2022【予測部門】
 ②機械学習エンジニア（ML Engineer）
 ③ソフトウェアエンジニア（Software Engineer）
 ④コンサルタント（Consultant）
-締切： 2022年8月25日 (편집됨) 
+締切： 2022年8月25日 
