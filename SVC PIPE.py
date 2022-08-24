@@ -75,7 +75,7 @@ def preProcessing(texts):
         # ステミング
         clean_normalize = [stemmer.stem(word) for word in clean_short_tokenized]
         # 単語同士をスペースでつなぎ, 文章に戻す
-        clean_text = ' '.join(clean_normalize)
+        clean_text = ''.join(clean_normalize)
         clean_texts.append(clean_text)
 
 
@@ -216,6 +216,7 @@ def main():
     combined_cleaned = combined.copy()
     combined_cleaned['description'] = preProcessing(combined['description'])
     train['description'] = preProcessing(train['description'])
+    test['description'] = preProcessing(test['description'])
     # combined_cleaned['description'] = combined_cleaned['description'].apply(lambda x: gensim.utils.simple_preprocess(x))
     # checkPreProcessing(combined, combined_cleaned)
 
